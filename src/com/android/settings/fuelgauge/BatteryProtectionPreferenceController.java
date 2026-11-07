@@ -30,10 +30,9 @@ import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.overlay.FeatureFactory;
 
 /**
- * A controller to manage the switch for showing battery percentage in the status bar.
+ * A controller to manage the switch for battery protection toggle (Limit charge to 80%).
  */
 
-// LINT.IfChange
 public class BatteryProtectionPreferenceController extends BasePreferenceController implements
         PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
 
@@ -48,7 +47,7 @@ public class BatteryProtectionPreferenceController extends BasePreferenceControl
         super.displayPreference(screen);
         mPreference = screen.findPreference(getPreferenceKey());
         if (!Utils.isBatteryPresent(mContext)) {
-            // Disable battery percentage
+            // Disable battery protection
             onPreferenceChange(mPreference, false /* newValue */);
         }
     }
@@ -78,4 +77,3 @@ public class BatteryProtectionPreferenceController extends BasePreferenceControl
         return true;
     }
 }
-// LINT.ThenChange(BatteryPercentageSwitchPreference.kt)
