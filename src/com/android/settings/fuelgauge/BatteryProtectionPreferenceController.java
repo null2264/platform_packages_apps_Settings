@@ -39,7 +39,7 @@ public class BatteryProtectionPreferenceController extends BasePreferenceControl
 
     private Preference mPreference;
 
-    public BatteryPercentagePreferenceController(Context context, String preferenceKey) {
+    public BatteryProtectionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
     }
 
