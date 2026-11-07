@@ -7098,6 +7098,11 @@
     <!-- [CHAR_LIMIT=NONE] Battery percentage: Description for preference -->
     <string name="battery_percentage_description">Show battery percentage in status bar</string>
 
+    <!-- [CHAR_LIMIT=40] Battery protection: Title -->
+    <string name="battery_protection">Battery protection</string>
+    <!-- [CHAR_LIMIT=NONE] Battery protection: Description for preference -->
+    <string name="battery_protection_description">Limit charge to 80 percent</string>
+
     <!-- [CHAR_LIMIT=NONE] Battery usage main screen chart graph hint since last full charge -->
     <string name="battery_usage_chart_graph_hint_last_full_charge">Battery level since last full charge</string>
     <!-- [CHAR_LIMIT=NONE] Battery usage main screen chart graph hint -->
